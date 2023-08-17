@@ -1,5 +1,4 @@
-import { IsString, Min, MinLength } from 'class-validator';
-import { name } from './../../../node_modules/ci-info/index.d';
+import { IsString,  MinLength } from 'class-validator';
 export class CreateBrandDto {
 
     @IsString()
