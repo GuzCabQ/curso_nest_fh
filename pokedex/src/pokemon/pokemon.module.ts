@@ -10,7 +10,7 @@ import { SeedModule } from 'src/seed/seed.module';
   providers: [PokemonService],
   imports: [
     MongooseModule.forFeature([{ name: Pokemon.name, schema: PokemonSchema }]),
-    SeedModule
   ],
+  exports: [PokemonService],
 })
 export class PokemonModule {}
